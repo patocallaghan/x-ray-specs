@@ -9,6 +9,11 @@ module('Acceptance | index', function (hooks) {
     await visit('/');
 
     assert.strictEqual(currentURL(), '/', 'We are on the index page');
+  });
+
+  test('/ content is correct', async function (assert) {
+    await visit('/');
+
     assert.strictEqual(
       find('h1[id="title"]').textContent,
       'Congratulations, you made it!',
