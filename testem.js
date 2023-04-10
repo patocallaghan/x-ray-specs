@@ -1,4 +1,5 @@
 'use strict';
+const CustomXUnitReporter = require('./lib/custom-xunit-reporter');
 
 module.exports = {
   test_page: 'tests/index.html?hidepassed',
@@ -20,4 +21,5 @@ module.exports = {
       ].filter(Boolean),
     },
   },
+  reporter: CustomXUnitReporter,
 };
