@@ -1,7 +1,19 @@
-# x-ray-specs
+# X-Ray Specs: See Through Your Test Suite!
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+Example Ember app to accompany lightning talk at [Ember.js Dublin](https://www.meetup.com/emberjsdublin/events/292260220/), Phorest, 13th April 2023 
+
+[Slides](https://docs.google.com/presentation/d/1wlaY57nhbpEf6o_EsjHIApdEfEaObGyO8ZjUeaeL2M4)
+
+This repo shows how to use Testem to capture data from your test suite and potentially do something with it, i.e. send it to some third party vendor.
+
+## Instructions
+* `yarn test:ember` and see `console.log` in the terminal output
+
+## Interesting files
+* [/tests/test-helper.js](https://github.com/patocallaghan/x-ray-specs/blob/master/tests/test-helper.js) - Adds Testem Custom Adapter
+* [testem.js](https://github.com/patocallaghan/x-ray-specs/blob/master/testem.js) - Configures reporter
+* [lib/custom-xunit-reporter.js](https://github.com/patocallaghan/x-ray-specs/blob/master/lib/custom-xunit-reporter.js) - Configures custom and captures test data
 
 ## Prerequisites
 
